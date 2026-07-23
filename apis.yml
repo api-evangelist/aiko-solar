@@ -1,8 +1,24 @@
 aid: aiko-solar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aiko-solar.png
 name: Aiko Solar
-description: 'Aiko Solar is a company surfaced as a portfolio company of idg-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer-technology. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Aiko Solar (Zhejiang Aiko Solar Energy Co.) is a solar photovoltaic manufacturer
+  specializing in high-efficiency solar cells and modules, best known for its ABC (All
+  Back Contact) module technology for residential, commercial, industrial, and utility-scale
+  applications. A BloombergNEF Tier 1 manufacturer, the company reports 200 GW+ accumulative
+  cell and module shipments and mass-production cell efficiency around 25%. This is a
+  hardware manufacturer with no public developer or API surface; the profile is maintained
+  in the API Evangelist network as a company record.'
 url: https://raw.githubusercontent.com/api-evangelist/aiko-solar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -15,7 +31,12 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-- Consumer Technology
+- Solar
+- Photovoltaics
+- Renewable Energy
+- Clean Energy
+- Manufacturing
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aiko-solar-domain-security.yml
 - type: Website
   url: https://aikosolar.com/
+- type: Blog
+  url: https://aikosolar.com/en/events-and-news/
+- type: Support
+  url: https://aikosolar.com/en/contact-us/
+- type: PrivacyPolicy
+  url: https://aikosolar.com/en/privacy-policy/
+- type: TermsOfService
+  url: https://aikosolar.com/en/terms-and-conditions/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
